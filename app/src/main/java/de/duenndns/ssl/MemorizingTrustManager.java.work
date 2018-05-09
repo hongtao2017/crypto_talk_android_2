@@ -155,7 +155,7 @@ public class MemorizingTrustManager implements X509TrustManager {
 		File dir = app.getDir(KEYSTORE_DIR, Context.MODE_PRIVATE);
 		keyStoreFile = new File(dir + File.separator + KEYSTORE_FILE);
 
-		appKeyStore = loadAppKeyStore();
+		// appKeyStore = loadAppKeyStore();
 	}
 
 	
@@ -417,8 +417,9 @@ public class MemorizingTrustManager implements X509TrustManager {
 		LOGGER.log(Level.FINE, "checkCertTrusted(" + chain + ", " + authType + ", " + isServer + ")");
 		try {
 			LOGGER.log(Level.FINE, "checkCertTrusted: trying appTrustManager");
-			if (isServer)
-				appTrustManager.checkServerTrusted(chain, authType);
+			if (isServer) {
+				// appTrustManager.checkServerTrusted(chain, authType);
+			}
 			else
 				appTrustManager.checkClientTrusted(chain, authType);
 		} catch (CertificateException ae) {
