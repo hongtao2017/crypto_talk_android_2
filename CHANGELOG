@@ -47,6 +47,9 @@ dca461c make waiting for friend disappear after you request a refriend
 fb46ddb improve XMPP subscription, login and receipts
 4490515 for #416, don't crash on the group add contact
 77d382b still use the heartbeat service on older devices before Android O
+
+ttt
+
 12fadcc tweak socket timeouts to be lower
 0578373 progress on #400 resend and delete #387
 fe77a9b for #388 scanning QR code now should open chat
